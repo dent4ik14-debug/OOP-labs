@@ -1,6 +1,5 @@
 import numpy as np
 
-
 class CalculatorMatrix:
     def __init__(self, student_number):
         self.student_number = student_number
@@ -27,7 +26,6 @@ class CalculatorMatrix:
         return np.mean(matrix_c, axis=0)
 
     def execute(self, rows=3, cols=3, scalar=5.5):
-        print(f"--- Звіт виконання для НЗК {self.student_number} ---")
         try:
             dtype = self.get_matrix_element_type()
             matrix_b = np.random.uniform(1.0, 100.0, size=(rows, cols)).astype(dtype)
