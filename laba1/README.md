@@ -12,4 +12,4 @@
 Налаштовано GitHub Actions. Тести запускаються автоматично при кожному пуші.
 
 ## Відео захисту
-[![Переглянути відео](https://img.youtube.com/vi/ВАШ_ID_YouTube/0.jpg)](https://www.youtube.com/watch?v=ВАШ_ID_YouTube)
+<video src="demo_laba_1.mp4" width="700" controls></video>
