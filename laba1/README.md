@@ -12,4 +12,7 @@
 Налаштовано GitHub Actions. Тести запускаються автоматично при кожному пуші.
 
 ## Відео захисту
-<video src="demo_laba_1.mp4" width="700" controls></video>
+<video src="demo_laba_1.mp4" width="100%" controls>
+  Ваш браузер не підтримує вбудоване відео. 
+  <a href="demo_laba_1.mp4">Завантажте відео за цим посиланням</a>.
+</video>

@@ -27,4 +27,7 @@
 * Коректність роботи оператора порівняння `__eq__`.
 
 ## Відео захисту
-<video src="demo_laba_3.mp4" width="700" controls></video>
+<video src="demo_laba_3.mp4" width="100%" controls>
+  Ваш браузер не підтримує вбудоване відео. 
+  <a href="demo_laba_3.mp4">Завантажте відео за цим посиланням</a>.
+</video>
