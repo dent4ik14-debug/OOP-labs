@@ -6,12 +6,16 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
 
     - name: Set up Python 3.10
       uses: actions/setup-python@v4
@@ -21,10 +25,12 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest
-        # Якщо використовуєте numpy чи інші ліби, додайте їх сюди:
-        # pip install numpy 
+        pip install pytest numpy
+        # Якщо створите файл requirements.txt, наступний рядок автоматично встановить усе з нього
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Test with pytest
       run: |
+        # Додаємо поточну директорію до PYTHONPATH, щоб тести бачили модулі в папках
+        export PYTHONPATH=$PYTHONPATH:$(pwd)
         pytest
